@@ -36,7 +36,7 @@ Change the SSH port especially if you are not using something like fail2ban; be 
 default[:ssh][:port] = '22'
 ````
 
-# Root Login
+### Root Login
 
 You should disable root login.
 
@@ -44,22 +44,21 @@ You should disable root login.
 default[:ssh][:permit_root_login] = 'no'
 ````
 
-# Password Login
+###Password Login
 
 You should also disable password login.
 
 ````
 default[:ssh][:password_authentication] = 'no'
 ````
-
-# PAM and Challenge Response Authentication
+### PAM and Challenge Response Authentication
 
 ````
 default[:ssh][:use_pam] = 'no'
 default[:ssh][:challenge_response_authentication] = 'no'
 ````
 
-# Empty Passwords
+### Empty Passwords
 
 This is probably default behaviour on most distros.
 
