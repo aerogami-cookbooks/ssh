@@ -9,28 +9,32 @@
 # Apache 2.0
 #
 
-service "ssh"
+service 'ssh'
 
-ssh_config "Port" do
+ssh_config 'Port' do
   string "Port #{node[:ssh][:port]}"
 end
 
-ssh_config "PermitRootLogin" do
+ssh_config 'PermitRootLogin' do
   string "PermitRootLogin #{node[:ssh][:permit_root_login]}"
 end
 
-ssh_config "PasswordAuthentication" do
+ssh_config 'PasswordAuthentication' do
   string "PasswordAuthentication #{node[:ssh][:password_authentication]}"
 end
 
-ssh_config "PermitEmptyPasswords" do
+ssh_config 'PermitEmptyPasswords' do
   string "PermitEmptyPasswords #{node[:ssh][:permit_empty_passwords]}"
 end
 
-ssh_config "ChallengeResponseAuthentication" do
+ssh_config 'ChallengeResponseAuthentication' do
   string "ChallengeResponseAuthentication #{node[:ssh][:challenge_response_authentication]}"
 end
 
-ssh_config "UsePAM" do
+ssh_config 'UsePAM' do
   string "UsePAM #{node[:ssh][:use_pam]}"
+end
+
+service 'ssh' do
+  action :restart
 end
