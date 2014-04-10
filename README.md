@@ -15,7 +15,7 @@ This cookbook is only tested on Ubuntu.
 Include this cookbook in your `Berksfile`.
 
 ````
-cookbook 'nodejs', git: 'aerogami-cookbooks/nodejs'
+cookbook 'ssh', git: 'aerogami-cookbooks/ssh'
 ````
 
 Install the cookbook.
