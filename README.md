@@ -1,4 +1,4 @@
-# security cookbook
+# SSH cookbook
 
 This cookbook configures basic security settings for a new server.
 
