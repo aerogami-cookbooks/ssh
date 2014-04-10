@@ -6,6 +6,8 @@ This cookbook configures basic security settings for a new server.
 2. It disables password authentication.
 3. It disables PAM.
 
+This cookbook is based in part on `https://github.com/gchef/ssh-cookbook.git`.
+
 # Requirements
 
 This cookbook is only tested on Ubuntu.
