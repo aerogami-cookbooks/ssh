@@ -29,7 +29,6 @@ Add to your chef kitchen and use as desired.
 # Attributes
 
 ### SSH Port
-
 Change the SSH port especially if you are not using something like fail2ban; be warned that security by obscurity is not security.
 
 ````
@@ -37,20 +36,19 @@ default[:ssh][:port] = '22'
 ````
 
 ### Root Login
-
 You should disable root login.
 
 ````
 default[:ssh][:permit_root_login] = 'no'
 ````
 
-###Password Login
-
+### Password Login
 You should also disable password login.
 
 ````
 default[:ssh][:password_authentication] = 'no'
 ````
+
 ### PAM and Challenge Response Authentication
 
 ````
@@ -59,7 +57,6 @@ default[:ssh][:challenge_response_authentication] = 'no'
 ````
 
 ### Empty Passwords
-
 This is probably default behaviour on most distros.
 
 ````
